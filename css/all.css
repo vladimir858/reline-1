@@ -1,3 +1,7 @@
+html, body {
+  font-family: Montserrat, sans-serif;
+
+}
 
 
 
@@ -29,7 +33,10 @@
 }
 
 .header__top {
-    
+   padding-left: 10vw;
+    display: flex;
+   
+    height: 80px;
     background: #000;
     
 }
@@ -41,22 +48,56 @@
     display: flex;
 }
 .header__logo {
+    padding-top: 23px;
+    margin-right: 28vw;
 }
 .header__nav {
+    
   display: flex;
 }
 .header__nav-list {
+    padding: 30px 0;
     display: flex;
-  
+  margin-right: 120px;
+}
+
+.child{
+    margin-right: 3vw;
 }
 .header__nav-item {
 }
 .header__nav-link {
+    font-size: 18px;
+    margin-right: 40px;
+     font-weight: 400 ;
     color: #ffffff56;
+    transition: .4s;
 }
+
+.header__nav-link:hover {
+    color: #ffffff;
+}
+
+
+
 .header__btn-box {
+    
+    justify-content: center;
+    align-items: center;
+    margin-top: 18px;
+    outline: solid #4F70C1  2px ;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    width: 200px;
+    height: 44px;
+    background: #ffffff;
+    padding: 12px  ;
 }
 .header__top-btn {
+    color: #4F70C1;
+    font-weight: 400 ;
 }
 .header__box-img {
+    margin-left: 10px;
 }
