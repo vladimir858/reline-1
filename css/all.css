@@ -31,8 +31,42 @@ html, body {
 }
 
 .burger {
-  display: none;
+  margin-top: 23px;
+  background: var(--black);
+ display: none;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 32px;
+    height: 24px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    position: relative;
+    z-index: 10;
+
 }
+
+  .burger__line {
+    display: block;
+    width: 100%;
+    height: 4px;
+    background: var(--blue);
+    transition: all 0.3s ease;
+  }
+
+
+ .burger.active .burger__line:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+  
+  .burger.active .burger__line:nth-child(2) {
+    opacity: 0;
+  }
+  
+  .burger.active .burger__line:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+
 
 
 .header {
@@ -197,9 +231,7 @@ margin-left: 1rem;
   display: flex;
    justify-content: center;
 align-items: center;
-border-radius: 30px;
-width: 1200px;
-height: 682px;
+
 }
 
 
@@ -213,6 +245,8 @@ align-items: center;
 .header-img-child{
     width: 100%;
   height: 100%;
+border-radius: 30px;
+     box-shadow: -1px 8px 9px rgb(0 0 0 / 20%), 2px 0 4px rgba(0, 0, 0, 0.2), -3px 2px 0px 0px rgba(0, 0, 0, 0.05);
 }
 
 
@@ -222,3 +256,85 @@ align-items: center;
     margin-right: 21vw;
   } */
 }
+
+
+
+@media (max-width: 1300px) {
+  /* .header__logo{
+    margin-right: 21vw;
+  } */
+
+  .header__nav-list{
+    margin-right: 0;
+  }
+}
+@media (max-width: 1300px) {
+.burger{
+  display: flex;
+}
+.header__nav-list{
+  display: none;
+}
+.header__logo{
+margin-left: 30vw;
+}
+.header__logo{
+margin-left: 30vw;
+}
+}
+@media (max-width: 1050px) {
+    .header__logo {
+        margin-left: 23vw;
+    }
+}
+@media (max-width: 900px) {
+    .header__logo {
+        margin-left: 21vw;
+    }
+}
+@media (max-width: 730px) {
+    .header__logo {
+        margin-left: 16vw;
+    }
+}
+
+@media (max-width: 655px) {
+  .header__top-btn{
+    display: none;
+  }
+  .header__btn-box{
+    width: 6.875rem;
+  }
+
+}
+@media (max-width: 540px) {
+
+  .header__btn-box{
+    width: 5rem;
+  }
+
+}
+@media (max-width: 450px) {
+
+  .header__btn-box{
+    width: 58px;
+  }
+.header__box-img{
+margin-left: 0;
+}
+}
+
+@media (max-width: 400px) {
+.header__logo {
+                margin-left: 11vw;
+    }
+
+}
+@media (max-width: 365px) {
+.header__logo {
+     margin-left: 7vw;
+    }
+
+}
+
+
