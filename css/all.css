@@ -16,7 +16,22 @@ html, body {
 }
 
 
+.subtitle{
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+.head{
+  font-weight: 700;
+  font-size: 64px;
+  line-height: 120%;
+}
 
+.subhead{
+   font-weight: 700;
+  font-size: 48px;
+  line-height: 48px;
+}
 
 .wrapper {
   min-height: 100%;
@@ -228,6 +243,7 @@ margin-left: 1rem;
   height: 100%;
 }
 .header-img {
+
   display: flex;
    justify-content: center;
 align-items: center;
@@ -243,6 +259,7 @@ align-items: center;
 
 
 .header-img-child{
+
     width: 100%;
   height: 100%;
 border-radius: 30px;
@@ -252,22 +269,40 @@ border-radius: 30px;
 
 
 .advantage {
+   margin-top:   550px;
 }
 .advantage-wrap {
+  display: flex;
 }
 .advantage-head {
+  margin-right: 23rem;
  font-weight: 700;
  line-height: 120%;
  font-size: 64px;
 }
 .advantage-subtitle {
+  margin-top: 30px;
   font-size: 16px;
   line-height: 24px;
   font-weight: 400;
 }
 .advantage-item {
+  margin-right: 10rem ;
+}
+
+
+.advantage-top{
+  margin-top: 60px;
 }
 .advantage-img-wrap {
+  margin-bottom: 25px;
+  width: 64px;
+  height: 64px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: rgb(0 0 0 / 18%);
 }
 .advantage-img {
 }
@@ -281,23 +316,36 @@ border-radius: 30px;
   font-weight: 400;
 }
 .production-title {
+  justify-content: center;
+  width: 47rem;
+  margin-top: 125px;
    font-weight: 700;
  line-height: 120%;
  font-size: 64px;
 }
+.production-title-child{
+
+}
+
+
+
 .production-subtitle {
+  margin-bottom: 65px;
+  width: 40rem;
       font-size: 16px;
   line-height: 24px;
   font-weight: 400;
-  
 }
 .production-wrap {
 
 }
 .production-item {
+  align-items: center;
+  justify-content: center;
   display: flex;
 }
 .production-head {
+  margin-bottom: 30px;
      font-weight: 700;
 
  font-size: 48px;
@@ -307,8 +355,30 @@ border-radius: 30px;
 .production-img {
 }
 
+.useful-item{
+    align-items: center;
+  display: flex;
+}
+.useful-title{
+ line-height: 120%;
+font-weight: 700;
+font-size: 64px;
+}
 
 
+.useful-wrap {
+  display: flex;
+}
+.useful-subtitle {
+width: 500px;
+margin-right: 8rem;
+}
+.subtitle {
+}
+
+.about-us{
+  background: rgba(79, 112, 193) ;
+}
 
 @media (max-width: 1650px) {
   /* .header__logo{
