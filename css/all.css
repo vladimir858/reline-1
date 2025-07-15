@@ -469,6 +469,41 @@ margin-bottom: 120px;
 
 
 
+.footer-head {
+  background: var(--black);
+}
+.form-wrap {
+  display: flex;
+}
+.form-img {
+  width: 24px;
+  height: 24px;
+}
+.form-mail {
+}
+.form-footer-title {
+  font-size: 1.5rem;
+  color: var(--white);
+  font-weight: 700;
+}
+.footer-button {
+  font-size: .9rem;
+  font-weight: bold;
+  background: var(--blue);
+  color: var(--white);
+  width: 9rem;
+  height: 44px;
+  border-radius: 8px;
+}
+.footer-head-line {
+  width: 1000px;
+  height: 1px;
+  border-top: 1px;
+  background: var(--blue);
+}
+
+
+
 
 @media (max-width: 1650px) {
   /* .header__logo{
