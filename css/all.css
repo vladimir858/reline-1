@@ -399,22 +399,31 @@ margin-bottom: 120px;
 }
 
 .about-us{
+    padding-top: 100px;
   margin-top: 150px;
-  background: rgba(79, 112, 193) ;
+  background: var(--blue) ;
 }
 
 
-.about-headtitle-wrap {
-  display: block;
+.center{
+  display: flex;
   justify-content: center;
   align-items: center;
 }
 .about-headtitle {
+
+  margin-bottom: 40px;
   font-weight: 700;
   font-size: 4rem;
   line-height: 120%;
 }
+.about-top{
+  margin-bottom: 64px;
+ margin-left: 340px;
+ margin-right: 340px;
+}
 .about-subtitle {
+
   font-weight: 400;
   font-size: 1rem;
   line-height: 24px;
@@ -423,6 +432,7 @@ margin-bottom: 120px;
   display: flex;
 }
 .about-item {
+  margin-bottom: 100px;
   margin-right: 20px;
   padding: 30px;
   width: 23rem;
@@ -433,6 +443,7 @@ margin-bottom: 120px;
 .svg-wrap {
   justify-content: center;
   display: flex;
+  margin-bottom: 27px;
 }
 .about-img {
   margin-right: 10px;
@@ -450,6 +461,7 @@ margin-bottom: 120px;
  margin-bottom: 26px;
 }
 .about-user-title {
+  color: gray;
   line-height: 20px;
   font-weight: 400;
   font-size: 14px;
