@@ -7,17 +7,18 @@
   <link rel="stylesheet" href="../css/all.css">
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/font.css">
+  <link rel="stylesheet" href="../css/head.css">
+  <script src="../scr.js" defer></script>
   <title>Главная</title>
 </head>
-
 <body>
   <div class="wrapper">
     <header class="header">
-      
+      <div class="overlay" id="overlay"></div>
       <div class="header__top header__top--open">
         <div class="header__top-inner">
           <nav class="header__nav">
-            <button  class="burger" >
+            <button  class="burger" id="burgerBtn">
         <span class="burger__line"></span>
         <span class="burger__line"></span>
         <span class="burger__line"></span>
@@ -36,17 +37,24 @@
                 <a class="header__nav-link" href="#">Контакты</a>
               </li>
             </ul>
-            <a class="header__logo" href="#">
-              <img src="../img/logo.svg" alt="Logo" class="logo">
-            </a>
           </nav>
+          <a class="header__logo" href="#">
+            <img src="../img/logo.svg" alt="Logo" class="logo">
+          </a>
           <div class="header__btn-box">
             <a class="header__top-btn" href="#">Личный кабинет</a>
             <div class="header__box-img"><img src="../img/human.svg"></div>
           </div>
         </div>
       </div>
-
+  <div class="popup-item" id="popupMenu">
+    <ul class="popup-nav">
+      <li class="popup-list"><a href="#" class="popup-link">Меню</a></li>
+      <li class="popup-list"><a href="#" class="popup-link">Каталог</a></li>
+      <li class="popup-list"><a href="#" class="popup-link">Обратная связь</a></li>
+      <li class="popup-list"><a href="#" class="popup-link">Контакты</a></li>
+    </ul>
+  </div>
 <div class="container">
   <div class="header-body">
     <div class="header-body-wrap">
@@ -58,40 +66,29 @@
       </div>
     </div>
     <div class="head-btn-box">
-
       <a href="#" class="button-link">
         <div class="head-button-title">Оформить заказ</div>
         <div class="head-arrow"><img src="../img/arrow.svg" class="img-arrow"></div>
       </a>
-
-
       <a href="#" class="button-link-two">
         <div class="head-button-title">Узнать больше</div>
       </a>
     </div>
-
     <div class="header-img">
       <img src="../img/head-min.jpg" class="header-img-child">
     </div>
-
-
-
-
   </div>
-
 </div>
     </header>
-<main>
+ <main>
    <section class="advantage">
     <div class="container">
-
-  
     <div class="advantage-wrap">
       <h2 class="advantage-head ">Почему Reline?</h2>
       <div class="advantage-subtitle subtitle">Для наших клиентов - только лучшее. <br><br>
       Для производства косметики Reline наши специалисты используют только натуральные и полезные для вашей кожи компоненты </div>
     </div>
-<div class="advantage-wrap advantage-top">
+<div class="advantage-top">
   <div class="advantage-item">
     <div class="advantage-img-wrap"><img src="../img/time.svg" class="advantage-img"></div>
     <h4 class="advantage-title ">Преимущество </h4>
@@ -112,13 +109,18 @@
 </div> 
   </div>
    </section> 
+
+   <!--
          <div class="container">
-           <h2 class="production-title ">Линейки продукции Reline
-            <!-- <div class="production-title-child"></div> --></h2> 
-           <h6 class="production-subtitle  ">Описание – основной смысл. Используйте 1-2 предложения 
-               в 1-3 строчки, если выравнивание по центру. При большем количестве
-                текста используйте другой тип выравнивания контента</h6>
-           
+           <div class="center">
+             <h2 class="production-title ">Линейки продукции Reline
+           </div>
+         </h2> 
+             <div class="center">
+               <h6 class="production-subtitle  ">Описание – основной смысл. Используйте 1-2 предложения 
+                   в 1-3 строчки, если выравнивание по центру. При большем количестве
+                    текста используйте другой тип выравнивания контента</h6>
+             </div>
             
            <section class="production-wrap">
               <div class="production-item">
@@ -157,18 +159,19 @@
 
       <section class="production-wrap">
               <div class="useful-item">
-                <div class="production-inner"><img src="../img/table-min.jpg" class="useful-img"></div>
+                <div class="production-inner production-img"><img src="../img/table-min.jpg" class="useful-img"></div>
 
                 <div class="production-wrap-title">
-                  <h3 class="useful-head ">Биологически активные добавки <br> к пище</h3>
-                  <div class="useful-subtitle ">Описание в 3-5 строчек</div>
+                  <h3 class="useful-head ">Биологически активные добавки  к пище</h3>
+                  <div class="subtitle-production">Описание в 3-5 строчек</div>
                 </div>
               </div>
               <div class="useful-item">
-                <div class="production-inner"><img src="../img/product-min.jpg" class="useful-img"></div>
+                <div class="production-inner production-img "><img src="../img/product-min.jpg" 
+                  class="useful-img"></div>
                 <div class="production-wrap-title">
                   <h3 class="useful-head ">Продукция из амарантовой муки</h3>
-                  <div class="useful-subtitle ">Описание в 3-5 строчек</div>
+                  <div class="subtitle-production">Описание в 3-5 строчек</div>
                 </div>
               </div>
              
@@ -272,49 +275,125 @@
 
 
 <section class="blog">
-
+  <div class="container">
+    <div class="blog-wrap">
+    <h6 class="blog-headtitle">Блог: <br>
+    интересные <br>статьи</h6>
+    <div class="accordion-wrap">
+      <div class="accordion">
+        <div class="accordion-head">
+          <div class="accordion-head-title">О косметике</div>
+          <div class="accordion-head-img">
+            <img src="../img/strelka.svg"  class="accordion-img">
+          </div>
+        </div>
+        <div class="accordion-sub">Описание – краткая расшифровка основного смысла статьи.
+           Помогите пользователю быстро найти интересующую               
+           его полезную информацию.</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-head">
+          <div class="accordion-head-title">Состав косметики линейки Reline</div>
+          <div class="accordion-head-img">
+            <img src="../img/strelka.svg"  class="accordion-img">
+          </div>
+        </div>
+        <div class="accordion-sub">Описание – краткая расшифровка основного смысла статьи.
+           Помогите пользователю быстро найти интересующую               
+           его полезную информацию.</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-head">
+          <div class="accordion-head-title">Советы косметологов</div>
+          <div class="accordion-head-img">
+            <img src="../img/strelka.svg"  class="accordion-img">
+          </div>
+        </div>
+        <div class="accordion-sub">Описание – краткая расшифровка основного смысла статьи.
+           Помогите пользователю быстро найти интересующую               
+           его полезную информацию.</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-head">
+          <div class="accordion-head-title">Секреты сбалансированного питания</div>
+          <div class="accordion-head-img">
+            <img src="../img/strelka.svg"  class="accordion-img">
+          </div>
+        </div>
+        <div class="accordion-sub">Описание – краткая расшифровка основного смысла статьи.
+           Помогите пользователю быстро найти интересующую               
+           его полезную информацию.</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-head">
+          <div class="accordion-head-title">5 способов ухода за кожей</div>
+          <div class="accordion-head-img">
+            <img src="../img/strelka.svg"  class="accordion-img">
+          </div>
+        </div>
+        <div class="accordion-sub">Описание – краткая расшифровка основного смысла статьи.
+           Помогите пользователю быстро найти интересующую               
+           его полезную информацию.</div>
+      </div>
+      <div class="accordion">
+        <div class="accordion-head">
+          <div class="accordion-head-title">Амарантовая мука: полезные свойства</div>
+          <div class="accordion-head-img">
+            <img src="../img/strelka.svg"  class="accordion-img">
+          </div>
+        </div>
+        <div class="accordion-sub">Описание – краткая расшифровка основного смысла статьи.
+           Помогите пользователю быстро найти интересующую               
+           его полезную информацию.</div>
+      </div>
+    </div>
+    </div>
+  </div>
 </section>
   
 <footer class="footer-head">
   <div class="container">
-    <form action="" placeholder="Email">
-      <div class="form-wrap">
-        <div class="form-footer-title">Получить консультацию</div>
-        <input type="email"  placeholder="Email">
-        <div class="form-img">
-          <img src="../img/letter.svg"  class="form-mail">
-        </div>
-        <button class="footer-button"  type="submit">Задать вопрос</button>
-      </div>
-  
-    </form>
-    <form action="" >
+      <div class="footer-wrap">
+        <form action="" placeholder="Email">
+          <div class="form-wrap">
+            <div class="center">
+              <div class="form-footer-title">Получить консультацию</div>
+            </div>
+
     
-      <div class="form-wrap">
-        <input type="tel"  placeholder="Телефон">
-        <div class="form-img">
-          <img src="../img/call.svg"  class="form-mail">
-        </div>
-        <button class="footer-button"  type="submit">Задать вопрос</button>
+            <input type="email" class="icon-input" placeholder="Email" data-icon="email">
+        
+            <button class="footer-button"  type="submit">Задать вопрос</button>
+          </div>
+      
+        </form>
+        <form action="" >
+          
+          <div class="form-wrap">
+            <input type="tel" class="icon-input" placeholder="Телефон">
+       
+            <button class="footer-button"  type="submit">Задать вопрос</button>
+          </div>
+        </form>
       </div>
-    </form>
-    <hr class="e">
-     <nav class="header__nav footer-head-lin ">
-              <ul class="header__nav-list">
-                <li class="header__nav-item">
-                  <a class="header__nav-link " id="white" href="#">О компании</a>
+
+    <hr class="footer-line">
+     <nav class="footer-nav ">
+              <ul class="footer-nav-list">
+                <li class="footer-nav-item">
+                  <a class="header__nav-link "  href="#">О компании</a>
                 </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#"> Каталог</a>
+                <li class="footer-nav-item">
+                  <a class="footer-nav-link" href="#"> Каталог</a>
                 </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#"> Сотрудничество</a>
+                <li class="footer-nav-item">
+                  <a class="footer-nav-link" href="#"> Сотрудничество</a>
                 </li>
-                <li class="header__nav-item">
-                  <a class="header__nav-link" href="#">Обратная связь</a>
+                <li class="footer-nav-item">
+                  <a class="footer-nav-link" href="#">Обратная связь</a>
                 </li>
-                <li class="header__nav-item child">
-                  <a class="header__nav-link" href="#">Контакты</a>
+                <li class="footer-nav-item ">
+                  <a class="footer-nav-link" href="#">Контакты</a>
                 </li>
               </ul>
               <a class="social" href="#">
@@ -325,8 +404,9 @@
               </a>
             </nav>
   </div>
-</footer>
+</footer> -->
   </div>
+  
 </body>
 
 </html>
