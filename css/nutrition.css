@@ -1,0 +1,18 @@
+.header__btn-box {
+    outline: solid var(--red)  2px ;
+}
+.header__top-btn {
+    color: var(--red);
+}
+.burger__line {
+
+  background: var(--red);
+}
+
+.burger.active .burger__line {
+  background: var(--red);
+}
+
+.popup-link:hover {
+  color: var(--red);
+}

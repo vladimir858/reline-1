@@ -46,9 +46,9 @@ html, body {
   padding-left: 2vw;
   transition: padding-left 0.3s ease; 
 }
-.header {
-  height: 100vh;
-}
+
+
+
 .header-body {
 display: block;
 justify-content: center;
