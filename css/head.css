@@ -102,7 +102,7 @@ border-radius: 30px;
 
 
 .advantage {
-   margin-top:   550px;
+   margin-top:   120px;
 }
 .advantage-wrap {
   display: flex;
@@ -423,6 +423,7 @@ input[type="tel"] {
 .accordion.open .accordion-sub {
   display: block;
 }
+
 
 
 

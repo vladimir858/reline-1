@@ -17,6 +17,10 @@
   color: var(--orange);
 }
 
+.footer-line {
+  background: var(--orange);
+}
+
 
 .body-item-wrap{
     margin-right: 20px;
@@ -194,6 +198,7 @@ margin-bottom: 130px;
 
 
 .blog {
+  margin-bottom: 182px;
   margin-top: 200px;
 }
 
@@ -242,8 +247,17 @@ margin-bottom: 130px;
 }
 
 
+.partners-item-wrap{
 
-
+}
+.partners-line {
+  margin-top: 16px;
+}
+.p-line {
+  background: rgba(175, 173, 173, 0.685);
+  width: 100%;
+  height: 1px;
+}
 
 
 

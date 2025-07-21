@@ -16,3 +16,7 @@
 .popup-link:hover {
   color: var(--orange);
 }
+
+.footer-line {
+  background: var(--orange);
+}
