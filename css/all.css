@@ -419,6 +419,7 @@ margin-left: 30vw;
         margin-left: 23vw;
     }
     .useful-head{
+      
       font-size: 2.5rem;
           height: 165px;
     }
@@ -480,18 +481,45 @@ display: block;
 }
    
 }
+
+
+
+
+/* 
+@media (max-width: 800px) {
+.head-title{
+  font-size: 3rem;
+}
+} 
+
+@media (max-width: 655px) {
+    .head-title{
+  font-size: 2.5rem;
+}
+@media (max-width: 540px) {
+  
+  .head-title{
+  font-size: 2.2rem;
+}
+
+@media (max-width: 450px) {
+    .head-title{
+  font-size: 1.8rem;
+}
+
+@media (max-width: 400px) {
+.head-title{
+  font-size: 1.6rem;
+}
+
+
+*/
 @media (max-width: 800px) {
 .head-title{
   font-size: 3rem;
 }
 }
-@media (max-width: 720px) {
-.head-title{
-  font-size: 3rem;
-}
 
-  
-}
 
 
 @media (max-width: 730px) {
@@ -536,7 +564,7 @@ display: block;
 
 @media (max-width: 450px) {
     .head-title{
-  font-size: 1.8rem;
+  font-size: 2rem;
 }
 
 .header__box-img{

@@ -286,7 +286,7 @@ margin-bottom: 130px;
   background-size: 20px;
 }
 #selected-item-child{
-  margin-bottom: 200px;
+  margin-top: 200px;
 }
 
 
@@ -413,6 +413,10 @@ background: var(--orange);
   padding-left: 1rem;
 }
 
+@media (max-width: 1250px) {
+
+
+}
 @media (max-width: 1200px) {
 .blog-headtitle {
   font-size: 3.5rem;
@@ -453,6 +457,10 @@ background: var(--orange);
 }
 
 @media (max-width: 490px) {
+.head-subtitle{
+      font-size: .8rem;
+}
+
 .blog-headtitle{
 
 }
