@@ -279,9 +279,7 @@ width: 100%;
 }
  
 
-/* .useful-item-child{
 
-} */
 .useful-head{
   max-width: 486px;
   height: 144px;
@@ -689,6 +687,7 @@ display: none;
   .production-img{
     min-width: 290px;
   }
+
 }
 
 @media (max-width: 450px) {

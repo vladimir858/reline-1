@@ -1,119 +1,259 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-      <link rel="stylesheet" href="../css/all.css">
-  <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/font.css">
-  <link rel="stylesheet" href="../css/nutrition.css">
-   <script src="../script/popup.js" defer></script>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../css/all.css" />
+    <link rel="stylesheet" href="../css/reset.css" />
+    <link rel="stylesheet" href="../css/font.css" />
+    <link rel="stylesheet" href="../css/blog.css" />
+    <script src="../script/popup.js" defer></script>
     <title>Полезное питание</title>
-</head>
-<body>
-  <div class="wrapper">
-    <header class="header">
-      <div class="overlay" id="overlay"></div>
-      <div class="header__top header__top--open">
-        <div class="header__top-inner">
-          <nav class="header__nav">
-            <button  class="burger" id="burgerBtn">
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        <span class="burger__line"></span>
-        </button>
-            <ul class="header__nav-list">
-              <li class="header__nav-item">
-                <a class="header__nav-link " id="white" href="#">Меню</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Каталог</a>
-              </li>
-              <li class="header__nav-item">
-                <a class="header__nav-link" href="#">Обратная связь</a>
-              </li>
-              <li class="header__nav-item child">
-                <a class="header__nav-link" href="#">Контакты</a>
-              </li>
-            </ul>
-          </nav>
-          <a class="header__logo" href="#">
-            <img src="../img/logo.svg" alt="Logo" class="logo">
-          </a>
-          <div class="header__btn-box">
-            <a class="header__top-btn" href="#">Личный кабинет</a>
-            <div class="header__box-img"><img src="../img/human-red.svg"></div>
-          </div>
-        </div>
-      </div>
-  <div class="popup-item" id="popupMenu">
-    <ul class="popup-nav">
-      <li class="popup-list"><a href="#" class="popup-link">Меню</a></li>
-      <li class="popup-list"><a href="#" class="popup-link">Каталог</a></li>
-      <li class="popup-list"><a href="#" class="popup-link">Обратная связь</a></li>
-      <li class="popup-list"><a href="#" class="popup-link">Контакты</a></li>
-    </ul>
-  </div>
-    </header>
-
-<footer class="footer-head">
-  <div class="container">
-      <div class="footer-wrap">
-        <form action="" placeholder="Email">
-          <div class="form-wrap">
-            <div class="center">
-              <div class="form-title">Получить консультацию</div>
-            </div>
-
-    
-            <input type="email" class=" icon-input icon-input-3" placeholder="Email" data-icon="email" name="email">
-        
-            <button class="footer-button footer-button-none "  type="submit">Задать вопрос</button>
-          </div>
-      
-        </form>
-        <form action="#" >
-          
-          <div class="form-wrap">
-            <input type="tel" class="icon-input icon-input-4" placeholder="Телефон" name="tel">
-       
-            <button class="footer-button footer-button-none "  type="submit">Задать вопрос</button>
-          </div>
-        </form>
-      </div>
-
-    <hr class="footer-line">
-     <nav class="footer-nav ">
-              <ul class="footer-nav-list">
-                <li class="footer-nav-item">
-                  <a class="header__nav-link "  href="#">О компании</a>
+  </head>
+  <body>
+    <div class="wrapper">
+      <header class="header">
+        <div class="overlay" id="overlay"></div>
+        <div class="header__top header__top--open">
+          <div class="header__top-inner">
+            <nav class="header__nav">
+              <button class="burger" id="burgerBtn">
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+                <span class="burger__line"></span>
+              </button>
+              <ul class="header__nav-list">
+                <li class="header__nav-item">
+                  <a class="header__nav-link" id="white" href="#">Меню</a>
                 </li>
-                <li class="footer-nav-item">
-                  <a class="footer-nav-link" href="#"> Каталог</a>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Каталог</a>
                 </li>
-                <li class="footer-nav-item">
-                  <a class="footer-nav-link" href="#"> Сотрудничество</a>
+                <li class="header__nav-item">
+                  <a class="header__nav-link" href="#">Обратная связь</a>
                 </li>
-                <li class="footer-nav-item">
-                  <a class="footer-nav-link" href="#">Обратная связь</a>
-                </li>
-                <li class="footer-nav-item ">
-                  <a class="footer-nav-link" href="#">Контакты</a>
+                <li class="header__nav-item child">
+                  <a class="header__nav-link" href="#">Контакты</a>
                 </li>
               </ul>
-               <button class="footer-button footer-button-block "  
-                  type="submit">Задать вопрос</button>
-              <a class="social" href="#">
-                <img src="../img/tg-red.svg"  class="telegramm">
-              </a>
-              <a class="social" href="#">
-                <img src="../img/Vk-red.svg"  class="vk">
-              </a>
             </nav>
-  </div>
-</footer>
+            <a class="header__logo" href="#">
+              <img src="../img/logo.svg" alt="Logo" class="logo" />
+            </a>
+            <div class="header__btn-box">
+              <a class="header__top-btn" href="#">Личный кабинет</a>
+              <div class="header__box-img">
+                <img src="../img/human-orange.svg" />
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="popup-item" id="popupMenu">
+          <ul class="popup-nav">
+            <li class="popup-list"><a href="#" class="popup-link">Меню</a></li>
+            <li class="popup-list">
+              <a href="#" class="popup-link">Каталог</a>
+            </li>
+            <li class="popup-list">
+              <a href="#" class="popup-link">Обратная связь</a>
+            </li>
+            <li class="popup-list">
+              <a href="#" class="popup-link">Контакты</a>
+            </li>
+          </ul>
+        </div>
+      </header>
+      <main>
+        <section class="intro__section">
+          <h1 class="intro__heading">Полезное питание</h1>
+          <p class="intro__text">
+            Описание – основной смысл. Используйте 1-2 предложения в 1-3
+            строчки, если выравнивание по центру. При большем количестве текста
+            используйте другой тип выравнивания контента
+          </p>
+        </section>
+        <section class="products__section">
+          <div class="product__area">
+            <img class="product__img" src="../img/product1.png" alt="#" />
+            <div class="product__text-area">
+              <h2 class="product__heading">
+                Биологически активные добавки к пище
+              </h2>
+              <p class="product__description">Описание в 3-5 строчек</p>
+            </div>
+          </div>
+          <div class="product__area">
+            <img class="product__img" src="../img/product2.png" alt="#" />
+            <div class="product__text-area">
+              <h2 class="product__heading">Продукция из амарантовой муки</h2>
+              <p class="product__description">Описание в 3-5 строчек</p>
+            </div>
+          </div>
+        </section>
+        <section class="catalog__section">
+          <div class="catalog__description">
+            <h1 class="catalog__heading">Каталог товаров</h1>
+            <div class="catalog__wrapper">
+              <h1 class="catalog__heading-description">Бады к пище</h1>
+              <p class="catalog__text-description">
+                Краткое описание продукции, её основных свойств и/или
+                преимуществ в 1-2 предложениях
+              </p>
+            </div>
+          </div>
+          <div class="catalog__list">
+            <div class="catalog__list__wrapper">
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- <section class="catalog__section">
+          <div class="catalog__description">
+            <h1 class="catalog__heading">Каталог товаров</h1>
+            <div class="catalog__wrapper">
+              <h1 class="catalog__heading-description">
+                Продукция из амарантовой муки
+              </h1>
+              <p class="catalog__text-description">
+                Краткое описание продукции, её основных свойств и/или
+                преимуществ в 1-2 предложениях
+              </p>
+            </div>
+          </div>
+          <div class="catalog__list">
+            <div class="catalog__wrapper">
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+              <div class="catalog__item">
+                <div class="item__img"></div>
+                <h6 class="item__heading">Название товара</h6>
+                <p class="item__text">Краткое описание (или цена)</p>
+              </div>
+            </div>
+          </div>
+        </section> -->
+      </main>
+    </div>
+    <footer class="footer-head">
+      <div class="container">
+        <div class="footer-wrap">
+          <form action="" placeholder="Email">
+            <div class="form-wrap">
+              <div class="center">
+                <div class="form-title">Получить консультацию</div>
+              </div>
 
-</div> 
-    
-</body>
+              <input
+                type="email"
+                class="icon-input icon-input-3"
+                placeholder="Email"
+                data-icon="email"
+                name="email"
+              />
+
+              <button class="footer-button footer-button-none" type="submit">
+                Задать вопрос
+              </button>
+            </div>
+          </form>
+          <form action="#">
+            <div class="form-wrap">
+              <input
+                type="tel"
+                class="icon-input icon-input-4"
+                placeholder="Телефон"
+                name="tel"
+              />
+
+              <button class="footer-button footer-button-none" type="submit">
+                Задать вопрос
+              </button>
+            </div>
+          </form>
+        </div>
+
+        <hr class="footer-line" />
+        <nav class="footer-nav">
+          <ul class="footer-nav-list">
+            <li class="footer-nav-item">
+              <a class="header__nav-link" href="#">О компании</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#"> Каталог</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#"> Сотрудничество</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Обратная связь</a>
+            </li>
+            <li class="footer-nav-item">
+              <a class="footer-nav-link" href="#">Контакты</a>
+            </li>
+          </ul>
+          <button class="footer-button footer-button-block" type="submit">
+            Задать вопрос
+          </button>
+          <a class="social" href="#">
+            <img src="../img/tg-orange.svg" class="telegramm" />
+          </a>
+          <a class="social" href="#">
+            <img src="../img/Vk-orange.svg" class="vk" />
+          </a>
+        </nav>
+      </div>
+    </footer>
+  </body>
 </html>

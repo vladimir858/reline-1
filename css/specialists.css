@@ -1,0 +1,12 @@
+.btn-work-title--black{
+    color: var(--white);
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 2rem;
+}
+.btn-work-title {
+    color: var(--black);
+    line-height: 24px;
+    font-weight: bold;
+    font-size: 2rem;
+}

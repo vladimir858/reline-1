@@ -1,11 +1,10 @@
 .header__btn-box {
-    outline: solid var(--orange)  2px ;
+  outline: solid var(--orange) 2px;
 }
 .header__top-btn {
-    color: var(--orange);
+  color: var(--orange);
 }
 .burger__line {
-
   background: var(--orange);
 }
 
@@ -17,6 +16,216 @@
   color: var(--orange);
 }
 
+.intro__section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  margin: 120px auto;
+}
+.intro__heading {
+  color: var(--black);
+  font-size: 64px;
+  font-weight: 700;
+}
+.intro__text {
+  color: var(--black);
+  font-size: 16px;
+  width: 521px;
+  line-height: 24px;
+}
+.products__section {
+  display: flex;
+  flex-direction: column;
+  gap: 50px;
+}
+.product__area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 1200px;
+  margin: auto;
+}
+.product__text-area {
+  width: 486px;
+}
+.product__heading {
+  color: var(--black);
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 38px;
+}
+.product__description {
+  font-size: 16px;
+  margin-top: 50px;
+}
+.catalog__section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 120px auto;
+}
+.catalog__description {
+  display: flex;
+  flex-direction: column;
+  width: 1200px;
+  gap: 70px;
+  margin-bottom: 120px;
+}
+.catalog__wrapper {
+  display: flex;
+}
+.catalog__list__wrapper {
+  display: grid;
+  justify-content: space-between;
+  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 10px;
+}
+.catalog__heading {
+  color: var(--black);
+  font-size: 64px;
+  font-weight: 700;
+}
+.catalog__heading-description {
+  color: var(--black);
+  font-size: 48px;
+  width: 100%;
+}
+.catalog__text-description {
+  width: 100%;
+}
+.item__img {
+  height: 386px;
+  width: 386px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+  background-color: #f7f8fa;
+  border-radius: 10px;
+  margin-bottom: 20px;
+}
+.item__heading {
+  color: var(--black);
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
 .footer-line {
-  background: var(--orange );
+  background: var(--orange);
+}
+
+@media (max-width: 1300px) {
+  .intro__heading {
+    font-size: 48px;
+  }
+  .intro__text {
+    font-size: 14px;
+  }
+  .product__area {
+    width: 1000px;
+  }
+  .product__img {
+    width: 400px;
+  }
+  .product__text-area {
+    width: 400px;
+  }
+  .product__heading {
+    font-size: 24px;
+  }
+  .product__description {
+    font-size: 14px;
+  }
+  .catalog__description {
+    width: 782px;
+  }
+  .catalog__heading {
+    font-size: 48px;
+  }
+  .catalog__list__wrapper {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto auto;
+  }
+  .catalog__heading-description {
+    font-size: 30px;
+    width: 400px;
+  }
+  .catalog__text-description {
+    width: 400px;
+  }
+}
+@media (max-width: 1028px) {
+  .intro__section {
+    margin: 80px auto;
+  }
+  .catalog__section {
+    margin: 80px auto;
+  }
+  .catalog__description {
+    margin-bottom: 80px;
+  }
+  .product__area {
+    display: block;
+    width: auto;
+  }
+  .product__description {
+    margin-top: 25px;
+  }
+}
+@media (max-width: 800px) {
+  .intro__section {
+    margin: 60px auto;
+  }
+  .catalog__section {
+    margin: 60px auto;
+  }
+  .catalog__description {
+    margin-bottom: 60px;
+  }
+  .intro__heading {
+    font-size: 30px;
+  }
+  .intro__text {
+    font-size: 12px;
+    width: 315px;
+  }
+  .product__img {
+    width: 315px;
+  }
+  .product__text-area {
+    width: 315px;
+  }
+  .product__heading {
+    font-size: 18px;
+  }
+  .product__description {
+    font-size: 12px;
+  }
+  .catalog__description {
+    width: 315px;
+  }
+  .catalog__wrapper {
+    display: block;
+  }
+  .catalog__heading {
+    font-size: 30px;
+  }
+  .catalog__list__wrapper {
+    grid-template-columns: 1fr;
+    grid-template-rows: auto auto auto auto auto auto;
+  }
+  .catalog__heading-description {
+    font-size: 30px;
+    width: 315px;
+  }
+  .catalog__text-description {
+    width: 315px;
+  }
+  .item__img {
+    width: 300px;
+    height: 300px;
+  }
 }
